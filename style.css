@@ -54,6 +54,8 @@ header{
     padding: 20px 162px;
 }
 
+
+
 nav > ul{
     list-style: none;
     display: flex;
@@ -63,6 +65,11 @@ nav > ul > li > a{
     padding: 14px 28px;
     font-weight: 500;
     color:var(--absolute-white);
+    border-radius: 8px;
+}
+
+nav > ul > li > a:hover:not(.selected){
+    outline: 1px solid var(--grey-15);
 }
 
 nav > ul > li >.selected{
@@ -113,6 +120,7 @@ nav > ul > li >.selected{
     justify-content: center;
 }
 
+
 .hero-sub-container > p{
     border: 1px solid var(--grey-15);
     border-radius: 12px;
@@ -131,6 +139,10 @@ nav > ul > li >.selected{
     margin: 0 6px;
 }
 
+.hero-sub-container > p > a:hover{
+    background-color: var(--grey-20);
+}
+
 .hero-buttons{
     display: flex;
     justify-content: center;
@@ -143,17 +155,48 @@ nav > ul > li >.selected{
     padding: 18px 28px;
     border-radius: 10px;
     font-weight: 500;
+    overflow: hidden;
 }
 
 .hero-buttons > .hero-button-gray{
     color:var(--absolute-white);
     background-color: rgba(36,36,36,20%);
     border: 1px solid var(--grey-20);
+    backdrop-filter: blur(5px);
+    transition: backdrop-filter 250ms ease-in-out;
+}
+
+.hero-buttons > .hero-button-gray:hover{
+    transition: backdrop-filter 250ms ease-in-out;
+    backdrop-filter: blur(0);
 }
 
 .hero-buttons > .hero-button-green{
     color:var(--absolute-black);
     background-color: var(--green-50);
+    border:2px solid var(--green-50);
+    position: relative;
+}
+
+.hero-buttons > .hero-button-green::before{
+    content: '';
+    height: 10px;
+    width:10px;
+    background-color: var(--grey-15);
+    border-radius: 50%;
+    position: absolute;
+    right: -11px;
+    bottom: -11px;
+    transition: transform 300ms ease-in-out;
+}
+
+.hero-buttons > .hero-button-green:hover{
+    color: var(--green-50);
+}
+
+.hero-buttons > .hero-button-green:hover::before{
+    transition: transform 300ms ease-in-out;
+    transform: scale(30);
 }
 
 .trusted-title{
@@ -176,6 +219,7 @@ nav > ul > li >.selected{
     display: flex;
     justify-content: space-around;
     gap: 20px;
+    cursor: pointer;
 }
 
 /* Our services*/
