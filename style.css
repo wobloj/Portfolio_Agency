@@ -118,6 +118,7 @@ nav > ul > li >.selected{
 .hero-sub-container{
     display: flex;
     justify-content: center;
+    user-select: none;
 }
 
 
