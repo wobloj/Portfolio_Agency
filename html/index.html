@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/3791a5ccb0.js" crossorigin="anonymous"></script>
-    <script src="./node_modules/webrouk-custom-range/webrouk-custom-range.js" defer></script>
+    <script src="../node_modules/webrouk-custom-range/webrouk-custom-range.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./img/Abstract Design (1).png">
+    <link rel="icon" type="image/x-icon" href="../img/Abstract Design (1).png">
     <title>Square up - Home Page</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="/index.html"><img src="./img/Logo.png" alt="Website logo SquareUp"></a>
+            <a href="./index.html"><img src="../img/Logo.png" alt="Website logo SquareUp"></a>
         </div>
         <nav>
             <ul>
@@ -28,7 +28,7 @@
                 <li><a href="./carrers.html">Carrers</a></li>
             </ul>
         </nav>
-        <a class="contact-us-btn" href="#"><span>Contact us</span></a>
+        <a class="contact-us-btn" href="index.html#cta"><span>Contact us</span></a>
     </header>
     <section class="hero-section">
         <div class="hero-background">
@@ -41,7 +41,7 @@
                 </div>
                 <div class="hero-buttons">
                     <a class="hero-button-gray" href="#">Our works</a>
-                    <a class="hero-button-green" href="#"><span>Contact-us</span></a>
+                    <a class="hero-button-green" href="./index.html#cta"><span>Contact-us</span></a>
                 </div>
             </div>
         </div>
@@ -50,12 +50,12 @@
             <p>Trusted By 250+ Companies</p>
         </div>
         <div class="hero-companies">
-            <img src="./img/zapier.png" alt="logo zapier">
-            <img src="./img/spotify.png" alt="logo spotify">
-            <img src="./img/zoom.png" alt="logo zoom">
-            <img src="./img/slack.png" alt="logo slack">
-            <img src="./img/amazon.png" alt="logo amazon">
-            <img src="./img/adobe.png" alt="logo adobe">
+            <img src="../img/zapier.png" alt="logo zapier">
+            <img src="../img/spotify.png" alt="logo spotify">
+            <img src="../img/zoom.png" alt="logo zoom">
+            <img src="../img/slack.png" alt="logo slack">
+            <img src="../img/amazon.png" alt="logo amazon">
+            <img src="../img/adobe.png" alt="logo adobe">
         </div>
     </div>
     </section>
@@ -197,7 +197,7 @@
                 </div>
                 <div class="faq-person-website">
                     <div class="img-name">
-                        <img src="./img/profile/Profile (1).png" alt="">
+                        <img src="../img/profile/Profile (1).png" alt="">
                         <div class="firstname-title">
                             <p class="name">
                                 John Smith
@@ -217,7 +217,7 @@
                 </div>
                 <div class="faq-person-website">
                     <div class="img-name">
-                        <img src="./img/profile/Profile.png" alt="">
+                        <img src="../img/profile/Profile.png" alt="">
                         <div class="firstname-title">
                             <p class="name">
                                 Sarah Johnson
@@ -237,7 +237,7 @@
                 </div>
                 <div class="faq-person-website">
                     <div class="img-name">
-                        <img src="./img/profile/Profile (2).png" alt="">
+                        <img src="../img/profile/Profile (2).png" alt="">
                         <div class="firstname-title">
                             <p class="name">
                                 Mark Thompson
@@ -257,7 +257,7 @@
                 </div>
                 <div class="faq-person-website">
                     <div class="img-name">
-                        <img src="./img/profile/Profile (3).png" alt="">
+                        <img src="../img/profile/Profile (3).png" alt="">
                         <div class="firstname-title">
                             <p class="name">
                                 Laura Adams
@@ -277,7 +277,7 @@
                 </div>
                 <div class="faq-person-website">
                     <div class="img-name">
-                        <img src="./img/profile/Profile (4).png" alt="">
+                        <img src="../img/profile/Profile (4).png" alt="">
                         <div class="firstname-title">
                             <p class="name">
                                 Michael Anderson
@@ -297,7 +297,7 @@
                 </div>
                 <div class="faq-person-website">
                     <div class="img-name">
-                        <img src="./img/profile/Profile (5).png" alt="">
+                        <img src="../img/profile/Profile (5).png" alt="">
                         <div class="firstname-title">
                             <p class="name">
                                 Emily Turner
@@ -312,7 +312,7 @@
             </div>
         </div>
     </section>
-    <section class="cta-section">
+    <section id="cta" class="cta-section">
         <div class="banner cta-banner">
             <h1>
                 Frequently Asked Questions
@@ -385,7 +385,7 @@
     </section>
     <section class="contact-form-section">
         <div class="banner-contact contact-banner">
-            <img src="./img/Abstract Design (1).png" alt="Logo">
+            <img src="../img/Abstract Design (1).png" alt="Logo">
             <div class="banner-h1-p">
                 <h1 style="font-size: 38px;">
                     Thank you for your Interest in SquareUp.
@@ -448,7 +448,6 @@
                         <p>Slide to indicate your budget range</p>
                     </div>
                     <webrouk-custom-range start="0" end="15000" from="5000" to="9900" prefix-char="$">
-                        <!-- This input will receive the value from the component -->
                         <input type="hidden">
                     </webrouk-custom-range>
                 </div>
@@ -465,7 +464,7 @@
     </section>
     <footer>
         <div class="footer-top">
-            <img src="./img/Logo.png" alt="Logo SquareUp">
+            <img src="../img/Logo.png" alt="Logo SquareUp">
             <div class="footer-nav">
                 <ul>
                     <li><a href="./index.html">Home</a></li>

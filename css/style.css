@@ -28,6 +28,7 @@
     box-sizing: content-box;
     scrollbar-width: auto;
     scrollbar-color: #262626 #333333;
+    
 }
 
 *::-webkit-scrollbar {
@@ -42,6 +43,10 @@
     background-color: #262626;
     border-radius: 10px;
     border: 1px solid #4d4d4d;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -61,6 +66,9 @@ a{
 section{
     margin: 0 162px;
 }
+
+
+
 /*Header*/
 
 header{
@@ -164,7 +172,7 @@ nav > ul > li >.selected{
 
 .hero-background{
     padding: 0 15%;
-    background-image: url("./img/Abstract Design.png");
+    background-image: url("../img/Abstract Design.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -189,6 +197,7 @@ nav > ul > li >.selected{
     display: flex;
     justify-content: center;
     user-select: none;
+    white-space: nowrap;
 }
 
 
@@ -279,8 +288,8 @@ nav > ul > li >.selected{
 
 .trusted-title{
     position: absolute;
-    right:35%;
-    transform: translate(-50%,-50%);
+    right:50%;
+    transform: translate(50%,-50%);
 }
 
 .trusted-title > p{
@@ -300,13 +309,18 @@ nav > ul > li >.selected{
     cursor: pointer;
 }
 
+.hero-companies > img{
+    max-width: 100%;
+    height: auto;
+}
+
 /* Our services*/
 
 .our-services-banner{
     position: relative;
 }
 .our-services-banner::before{
-    background-image: url("./img/backgrounds/Text Container.png");
+    background-image: url("../img/backgrounds/Text Container.png");
     filter: brightness(20%);
     display: block;
     position: absolute;
@@ -406,7 +420,7 @@ nav > ul > li >.selected{
     position: relative;
 }
 .why-choose-us-banner::before{
-    background-image: url("./img/backgrounds/Text Container (1).png");
+    background-image: url("../img/backgrounds/Text Container (1).png");
     filter: brightness(20%);
     display: block;
     position: absolute;
@@ -471,7 +485,7 @@ nav > ul > li >.selected{
     position: relative;
 }
 .faq-banner::before{
-    background-image: url("./img/backgrounds/Text Container (2).png");
+    background-image: url("../img/backgrounds/Text Container (2).png");
     filter: brightness(20%);
     display: block;
     position: absolute;
@@ -592,7 +606,7 @@ nav > ul > li >.selected{
     position: relative;
 }
 .cta-banner::before{
-    background-image: url("./img/backgrounds/Container (1).png");
+    background-image: url("../img/backgrounds/Container (1).png");
     filter: brightness(20%);
     display: block;
     position: absolute;
@@ -612,7 +626,7 @@ nav > ul > li >.selected{
 .cta-left,
 .cta-right{
     flex:1;
-    margin: 80px 0;
+    padding: 80px 0;
 }
 
 .cta-right{
@@ -624,6 +638,7 @@ nav > ul > li >.selected{
     padding: 34px 50px;
     position: relative;
     border: 1px solid var(--grey-15);
+    min-height: 115px;
 }
 
 .cta-left > .cta-question:nth-child(1){
@@ -747,7 +762,7 @@ nav > ul > li >.selected{
     position: relative;
 }
 .contact-banner::before{
-    background-image: url("./img/backgrounds/Container (2).png");
+    background-image: url("../img/backgrounds/Container (2).png");
     filter: brightness(20%);
     display: block;
     position: absolute;
@@ -1073,6 +1088,10 @@ footer{
     background: linear-gradient(180deg, rgba(36,36,36,1) 0%, rgba(36,36,36,0) 100%);
 }
 
+.socials > a > i:hover{
+    color: var(--green-70)
+}
+
 footer > hr{
     margin: 50px 0;
     border: none;
@@ -1133,7 +1152,6 @@ input[type=email]:focus{
 }
 
 webrouk-custom-range {
-    /* Expected variables from inside the component (optional) */
     --w-primary-color: #9EFF00;
     --w-text-color: #fff;
     --w-line-color: #333333;
@@ -1147,4 +1165,24 @@ webrouk-custom-range::part(value-start) {
 
 webrouk-custom-range::part(value-end) {
     display: none;
+}
+
+@media (max-width: 1440px){
+    header{
+        padding: 20px 80px;
+    }
+
+    section{
+        margin: 0 80px;
+    }
+
+    .hero-sub-container > p,
+    .hero-sub-container > p > a{
+        font-size: 18px;
+    }
+
+    nav > ul > li > a{
+        font-size: 14px;
+        padding: 12px 22px;
+    }
 }
