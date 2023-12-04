@@ -1,0 +1,31 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - main/html  # Zmienić na nazwę swojej głównej gałęzi
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build
+      run: npm run build  # Zastąp komendą do budowania twojej strony
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        publish-dir: ./html  # Zmień na ścieżkę do folderu, z którego chcesz publikować
+        github_token: ${{ secrets.GITHUB_TOKEN }}
