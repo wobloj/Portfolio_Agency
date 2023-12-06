@@ -1,27 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('colors.css');
 
-:root{
-    --absolute-white:#FFF;
-    --absolute-black:#000;
-
-    --green-50:#9EFF00;
-    --green-60:#B1FF33;
-    --green-70:#C5FF66;
-    --green-80:#D8FF99;
-    --green-90:#ECFFCC;
-    --green-95:#F5FFE5;
-    --green-97:#F9FFF0;
-    --green-99:#FDFFFA;
-
-    --grey-10:#191919;
-    --grey-15:#262626;
-    --grey-20:#333333;
-    --grey-30:#4C4C4D;
-    --grey-35:#59595A;
-    --grey-40:#656567;
-    --grey-60:#98989A;
-    --grey-90:#E6E6E6;
-}
 *{
     margin: 0;
     padding: 0;
@@ -52,11 +31,6 @@ html{
 body{
     font-family: 'Barlow', sans-serif;
     background: var(--grey-10);
-}
-
-p{
-    margin: 0;
-    padding: 0;
 }
 
 a{

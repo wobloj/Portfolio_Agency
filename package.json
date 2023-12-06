@@ -1,4 +1,10 @@
 {
+  "name": "moj-projekt",
+  "version": "1.0.0",
+  "description": "Opis mojego projektu",
+  "scripts": {
+    "start": "node ./js/index.js"
+},
   "dependencies": {
     "webrouk-custom-range": "^1.0.4"
   }
